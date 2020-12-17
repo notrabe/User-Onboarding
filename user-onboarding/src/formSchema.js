@@ -7,7 +7,7 @@ const formSchema = yup.object().shape({
     .required('Please enter a name'),
   email: yup
     .string()
-    .email(3, 'Username must be at least 3 characters long')
+    .email('Please enter valid email')
     .required('Must include email address'),
   password: yup
     .string()
